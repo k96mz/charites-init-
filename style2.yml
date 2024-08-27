@@ -1,0 +1,29 @@
+version: 8
+#sprite: https://-------------/sprites/sprite
+#glyphs: https://-------------/{fontstack}/{range}.pbf
+sources:
+  ne: #change the name if needed
+    type: vector
+    attribtuion: NaturalEarth #add if needed
+    minzoom: 0 #add if needed
+    maxzoom: 5 #add if needed
+    tiles:
+      - https://ubukawa.github.io/graticules-vt/zxy/{z}/{x}/{y}.pbf
+  carto: #change the name if needed
+    type: vector
+    attribtuion: Cartotile - Test data #add if needed
+    minzoom: 0 #add if needed
+    maxzoom: 2 #add if needed
+    tiles:
+      - https://ubukawa.github.io/cartotile/tile/{z}/{x}/{y}.pbf
+  cme: #change the name if needed
+    type: vector
+    attribtuion: UN_CLEARMAP_VT(powered by esri) #add if needed
+    minzoom: 0 #add if needed
+    maxzoom: 5 #add if needed
+    tiles:
+      - https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Clearmap_Webplain/VectorTileServer/tile/{z}/{y}/{x}.pbf
+layers:
+  - !!inc/file layers/background.yml
+  - !!inc/file layers/ls-grid30.yml
+  # add any layer if needed

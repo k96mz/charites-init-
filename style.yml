@@ -8,7 +8,7 @@ sources:
     #minzoom: 0 #add if needed
     #maxzoom: 5 #add if needed
     tiles:
-    - https://--------/{z}/{x}/{y}.pbf
+      - https://--------/{z}/{x}/{y}.pbf
 layers:
-   - !!inc/file layers/background.yml
-   # add any layer if needed
+  - !!inc/file layers/background.yml
+  # add any layer if needed
