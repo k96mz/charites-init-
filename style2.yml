@@ -1,6 +1,6 @@
 version: 8
-#sprite: https://-------------/sprites/sprite
-#glyphs: https://-------------/{fontstack}/{range}.pbf
+sprite: https://ubukawa.github.io/clearmap-style2/sprite_un/sprite_S
+glyphs: https://ubukawa.github.io/clearmap-style2/font/{fontstack}/{range}.pbf
 sources:
   ne: #change the name if needed
     type: vector
@@ -27,5 +27,6 @@ layers:
   - !!inc/file layers/background.yml
   - !!inc/file layers/pg-landmass.yml
   - !!inc/file layers/ls-coastline.yml
+  - !!inc/file layers/pt-city.yml
   - !!inc/file layers/ls-grid30.yml
   # add any layer if needed

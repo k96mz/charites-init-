@@ -6,18 +6,14 @@
       "attribtuion": "NaturalEarth",
       "minzoom": 0,
       "maxzoom": 5,
-      "tiles": [
-        "https://ubukawa.github.io/graticules-vt/zxy/{z}/{x}/{y}.pbf"
-      ]
+      "tiles": ["https://ubukawa.github.io/graticules-vt/zxy/{z}/{x}/{y}.pbf"]
     },
     "carto": {
       "type": "vector",
       "attribtuion": "Cartotile - Test data",
       "minzoom": 0,
       "maxzoom": 2,
-      "tiles": [
-        "https://ubukawa.github.io/cartotile/tile/{z}/{x}/{y}.pbf"
-      ]
+      "tiles": ["https://ubukawa.github.io/cartotile/tile/{z}/{x}/{y}.pbf"]
     },
     "cme": {
       "type": "vector",
@@ -49,14 +45,7 @@
       "type": "fill"
     },
     {
-      "filter": [
-        "==",
-        [
-          "get",
-          "bdytyp"
-        ],
-        0
-      ],
+      "filter": ["==", ["get", "bdytyp"], 0],
       "id": "ls-coastline",
       "minzoom": 0,
       "maxzoom": 5,
